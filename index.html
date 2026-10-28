@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle">🌙</button>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Hello, I'm [sonakshi b m]!</h2>
+<p>I am a student learning Web Development.</p>
+    <a href="#projects" class="btn">View My Projects</a>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <p>HTML</p>
+    <div class="bar"><div style="width:80%">80%</div></div>
+    <p>CSS</p>
+    <div class="bar"><div style="width:70%">70%</div></div>
+    <p>JavaScript</p>
+    <div class="bar"><div style="width:50%">50%</div></div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <button class="filter active" data-filter="all">All</button>
+    <button class="filter" data-filter="html">HTML/CSS</button>
+    <button class="filter" data-filter="js">JavaScript</button>
+
+    <div class="project-list">
+      <article class="project" data-category="html">
+        <h3>My First Website</h3>
+        <p>Created using HTML and CSS.</p>
+      </article>
+      <article class="project" data-category="js">
+        <h3>JavaScript App</h3>
+        <p>A small interactive project.</p>
+      </article>
+      <article class="project" data-category="html">
+        <h3>Portfolio Design</h3>
+        <p>A personal website design.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="blog">
+  <h2>My Blog</h2>
+  <p class="blog-intro">
+    My learning journey, coding tips and web development articles.
+  </p>
+
+  <div class="blog-list">
+    <article class="blog-card">
+      <span class="blog-tag">HTML & CSS</span>
+      <h3>My First Website</h3>
+      <p>
+        I started learning HTML to build website structures
+        and CSS to make them beautiful and responsive.
+      </p>
+      <button class="read-more">Read More</button>
+      <p class="blog-extra" hidden>
+        HTML creates the content of a webpage.
+        CSS adds colours, layouts, spacing and responsive design.
+      </p>
+    </article>
+
+    <article class="blog-card">
+      <span class="blog-tag">JavaScript</span>
+      <h3>Why Learn JavaScript?</h3>
+      <p>
+        JavaScript makes websites interactive with buttons,
+        forms, filters and many useful features.
+      </p>
+      <button class="read-more">Read More</button>
+      <p class="blog-extra" hidden>
+        JavaScript can respond to user actions, update webpage
+        content and help build interactive web applications.
+      </p>
+    </article>
+
+    <article class="blog-card">
+      <span class="blog-tag">My Journey</span>
+      <h3>My Developer Journey</h3>
+      <p>
+        Every small project helps me improve my coding skills
+        and become a better developer.
+      </p>
+      <button class="read-more">Read More</button>
+      <p class="blog-extra" hidden>
+        My goal is to keep practising, create new projects
+        and learn something useful every day.
+      </p>
+    </article>
+  </div>
+</section>
+<section id="blog">
+  <h2>My Blog</h2>
+  <p>Welcome to my blog! Here I share my coding journey.</p>
+
+  <div class="blog-list">
+    <article class="blog-card">
+      <h3>My First Website</h3>
+      <p>I learned HTML and CSS to create my first website.</p>
+    </article>
+
+    <article class="blog-card">
+      <h3>Why Learn JavaScript?</h3>
+      <p>JavaScript helps make websites interactive.</p>
+    </article>
+
+    <article class="blog-card">
+      <h3>My Developer Journey</h3>
+      <p>I practise coding to improve my skills every day.</p>
+    </article>
+  </div>
+</section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+  <footer>
+    <p>© 2026 My Student Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
